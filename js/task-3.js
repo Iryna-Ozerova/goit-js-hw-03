@@ -3,9 +3,9 @@
 function filterArray(numbers, value) {
     const sortedtArray = [];
 
-    for (const i of numbers) {
-        if (i > value) {
-            sortedtArray.push(i);
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > value) {
+            sortedtArray.push(numbers[i]);
         }
     }
     return sortedtArray;
